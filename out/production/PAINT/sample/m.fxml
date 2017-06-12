@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.8438395415472779" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <VBox prefHeight="586.0" prefWidth="1198.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <MenuBar>
+                     <menus>
+                        <Menu mnemonicParsing="false" text="File">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Close" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Edit">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Delete" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Help">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="About" />
+                           </items>
+                        </Menu>
+                     </menus>
+                  </MenuBar>
+                  <Group fx:id="g" autoSizeChildren="false" onMouseClicked="#test" />
+               </children>
+            </VBox>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <HBox prefHeight="104.0" prefWidth="1195.0">
+               <children>
+                  <VBox prefHeight="104.0" prefWidth="678.0">
+                     <children>
+                        <HBox prefHeight="65.0" prefWidth="598.0" spacing="5.0">
+                           <padding>
+                              <Insets bottom="5.0" left="15.0" top="8.0" />
+                           </padding>
+                           <children>
+                              <ToggleButton fx:id="black" mnemonicParsing="false" onAction="#black" prefHeight="24.0" prefWidth="90.0" selected="true" text="Black">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </ToggleButton>
+                              <ToggleButton fx:id="grey" mnemonicParsing="false" onAction="#grey" prefHeight="24.0" prefWidth="90.0" text="Grey" textFill="#685959">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </ToggleButton>
+                              <ToggleButton fx:id="brown" mnemonicParsing="false" onAction="#brown" prefHeight="24.0" prefWidth="90.0" text="Brown" textFill="#ab3304">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </ToggleButton>
+                              <ToggleButton fx:id="red" mnemonicParsing="false" onAction="#red" prefHeight="24.0" prefWidth="90.0" text="Red" textFill="RED">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </ToggleButton>
+                              <ToggleButton fx:id="orange" mnemonicParsing="false" onAction="#orange" prefHeight="24.0" prefWidth="90.0" text="Orange" textFill="#ff6300">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </ToggleButton>
+                              <ToggleButton fx:id="green" mnemonicParsing="false" onAction="#green" prefHeight="24.0" prefWidth="90.0" text="Green" textFill="LIME">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </ToggleButton>
+                              <ToggleButton fx:id="blue" mnemonicParsing="false" onAction="#blue" prefHeight="24.0" prefWidth="90.0" text="Blue" textFill="#1100ff">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </ToggleButton>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="65.0" prefWidth="598.0" spacing="5.0">
+                           <padding>
+                              <Insets bottom="5.0" left="15.0" top="8.0" />
+                           </padding>
+                           <children>
+                              <ToggleButton fx:id="erase" mnemonicParsing="false" onAction="#clear" prefHeight="24.0" prefWidth="90.0" text="Clear">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </ToggleButton>
+                              <ToggleButton fx:id="maroon" mnemonicParsing="false" onAction="#maroon" prefHeight="24.0" prefWidth="90.0" text="Maroon" textFill="#971919">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </ToggleButton>
+                              <ToggleButton fx:id="pink" mnemonicParsing="false" onAction="#pink" prefHeight="24.0" prefWidth="90.0" text="Pink" textFill="#ff00ddec">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </ToggleButton>
+                              <ToggleButton fx:id="gold" mnemonicParsing="false" onAction="#gold" prefHeight="24.0" prefWidth="90.0" text="Gold" textFill="#ffcc00">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </ToggleButton>
+                              <ToggleButton fx:id="aqua" mnemonicParsing="false" onAction="#aqua" prefHeight="24.0" prefWidth="90.0" text="Aqua" textFill="#00c9ff">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </ToggleButton>
+                              <ToggleButton fx:id="pruple" mnemonicParsing="false" onAction="#purple" prefHeight="24.0" prefWidth="90.0" text="Purple" textFill="#8a21bf">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </ToggleButton>
+                              <ToggleButton fx:id="magenta" mnemonicParsing="false" onAction="#magenta" prefHeight="24.0" prefWidth="90.0" text="Magenta" textFill="#c170ff">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </ToggleButton>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <ImageView fitHeight="103.0" fitWidth="47.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../img/dsds.png" />
+                     </image>
+                  </ImageView>
+                  <VBox prefHeight="104.0" prefWidth="518.0">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#triangle" prefHeight="78.0" prefWidth="70.0" text="Triangle" wrapText="true">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#square" prefHeight="78.0" prefWidth="70.0" text="Square">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#rect" prefHeight="78.0" prefWidth="70.0" text="Rectangle" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="11.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#oval" prefHeight="78.0" prefWidth="70.0" text="Oval">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#circle" prefHeight="78.0" prefWidth="70.0" text="Circle">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#line" prefHeight="78.0" prefWidth="70.0" text="Line">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="8.0" left="15.0" right="8.0" top="8.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#freehand" prefHeight="40.0" prefWidth="92.0" text="Free Hand">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                              <ColorPicker fx:id="clr" onAction="#colorPicker" prefHeight="50.0" prefWidth="125.0" />
+                           </children>
+                           <padding>
+                              <Insets bottom="7.0" left="15.0" right="10.0" top="5.0" />
+                           </padding></HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children></AnchorPane>
+  </items>
+</SplitPane>
